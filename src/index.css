@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mashiro: #F8F9FA;
+  --color-akagi: #FFB3BA;
+  --color-komaki: #BAE1FF;
+  --color-kise: #FFFFBA;
+  --color-midori: #BAFFC9;
+  --color-bg: #EADDF8;
+  --color-text: #393D55;
+  --font-sans: "Zen Maru Gothic", sans-serif;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-noise: noise 0.5s steps(2) infinite;
+  --animate-fade-in: fadeIn 0.5s ease-out forwards;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes noise {
+    0% { transform: translate(0,0); }
+    10% { transform: translate(-5%,-5%); }
+    20% { transform: translate(-10%,5%); }
+    30% { transform: translate(5%,-10%); }
+    40% { transform: translate(-5%,15%); }
+    50% { transform: translate(-10%,5%); }
+    60% { transform: translate(15%,0); }
+    70% { transform: translate(0,10%); }
+    80% { transform: translate(-15%,0); }
+    90% { transform: translate(10%,5%); }
+    100% { transform: translate(5%,0); }
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    overflow-x: hidden;
+}
+
+/* CSS Noise Effect */
+.noise-bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
+    animation: noise 0.5s steps(2) infinite;
+    pointer-events: none;
+    z-index: 50;
+    opacity: 0.15;
+    mix-blend-mode: overlay;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.text-shadow-sm {
+    text-shadow: 1px 1px 2px rgba(74, 78, 105, 0.1);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(74, 78, 105, 0.2);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(74, 78, 105, 0.4);
+}

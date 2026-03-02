@@ -1,0 +1,72 @@
+export const characters = [
+    {
+        id: 1,
+        name: "茉白 トキ",
+        nameEn: "Mashiro Toki",
+        color: "bg-mashiro",
+        colorHex: "#F8F9FA",
+        flower: "ジャスミン (Jasmine)",
+        flowerMeaning: "清らかな心・無邪気",
+        personality: "内向的で一人を好むが、実は寂しがり屋な一面もある21歳の見習いAIクリエイター。好きなものはジャスミンティーと可愛いもの、料理。春菊と人ゴミが苦手。",
+        song: "rain",
+        audio: "/audio/toki.mp3",
+        image: "/toki.png",
+        galleryImages: ["/toki.png", "/illustration/toki2.png", "/illustration/toki3.png", "/illustration/toki4.png", "/illustration/toki5.png"]
+    },
+    {
+        id: 2,
+        name: "赤城 ローザ",
+        nameEn: "Akagi Rosa",
+        color: "bg-akagi",
+        colorHex: "#FFB3BA",
+        flower: "赤いバラ (Red Rose)",
+        flowerMeaning: "情熱・美貌",
+        personality: "情熱的で頼れる姉御肌。面倒見が良い25歳のOL。仕事ができるカッコイイお姉さんだが、実はぬいぐるみを集めているというギャップを隠している。",
+        song: "Nonstop Highway",
+        audio: "/audio/roza.mp3",
+        image: "/roza.png",
+        galleryImages: ["/roza.png", "/illustration/roza2.png", "/illustration/roza3.png", "/illustration/roza4.png", "/illustration/roza5.png"]
+    },
+    {
+        id: 3,
+        name: "小牧 あお",
+        nameEn: "Komaki Ao",
+        color: "bg-komaki",
+        colorHex: "#BAE1FF",
+        flower: "ネモフィラ (Nemophila)",
+        flowerMeaning: "可憐・どこでも成功",
+        personality: "快活で裏表のない性格。笑顔とおしゃべりで周りを元気にする23歳の現場作業員（塗装業）。明るさの一方で、ひとの懐に入り込むしたたかさも持ち合わせる。",
+        song: "Luxury Night",
+        audio: "/audio/ao.mp3",
+        image: "/ao.png",
+        galleryImages: ["/ao.png", "/illustration/ao2.png", "/illustration/ao3.png", "/illustration/ao4.png", "/illustration/ao5.png"]
+    },
+    {
+        id: 4,
+        name: "黄瀬 ひより",
+        nameEn: "Kise Hiyori",
+        color: "bg-kise",
+        colorHex: "#FFFFBA",
+        flower: "フリージア (Freesia)",
+        flowerMeaning: "友情・真実の愛",
+        personality: "おっとりした癒し系で大人びた性格。物事を達観しているが、好きなことには没頭し行動する勢いもある17歳の高校生（アメリカからの帰国子女）。",
+        song: "Home Sweet Home",
+        audio: "/audio/hiyori.mp3",
+        image: "/hiyori.png",
+        galleryImages: ["/hiyori.png", "/illustration/hiyori2.png", "/illustration/hiyori3.png", "/illustration/hiyori4.png", "/illustration/hiyori5.png"]
+    },
+    {
+        id: 5,
+        name: "緑川 すず",
+        nameEn: "Midorikawa Suzu",
+        color: "bg-midori",
+        colorHex: "#BAFFC9",
+        flower: "スズラン (Lily of the valley)",
+        flowerMeaning: "純粋・再び幸せが訪れる",
+        personality: "物静かで穏やかな才色兼備の女性。無自覚に毒舌を振りまくが人柄の良さでカバー。怒らせるとこの世が終わると噂される。和テイストだが実はハンバーガー好き。",
+        song: "Late Night Radio",
+        audio: "/audio/suzu.mp3",
+        image: "/suzu.png",
+        galleryImages: ["/suzu.png", "/illustration/suzu.png", "/illustration/suzu3.png", "/illustration/suzu4.png", "/illustration/suzu5.png"]
+    }
+];
